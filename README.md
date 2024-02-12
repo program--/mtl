@@ -1,6 +1,6 @@
 # Mundane Template Library (MTL)
 
-A collection of *mundane* templates that can be used wherever.
+A collection of *mundane* tools that can be used wherever.
 
 ## License
 
