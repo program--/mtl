@@ -1,0 +1,36 @@
+---
+Checks: >
+  clang-diagnostic-*,
+  clang-analyzer-*,
+  cppcoreguidelines-*,
+  bugprone-*,
+  performance-*,
+  portability-*,
+  readability-*,
+  hicpp-*,
+  modernize-*,
+  -modernize-use-trailing-return-type,
+  -modernize-concat-nested-namespaces,
+  -readability-identifier-length,
+  -cppcoreguidelines-avoid-non-const-global-variables
+WarningsAsErrors: true
+HeaderFilterRegex: ""
+AnalyzeTemporaryDtors: false
+FormatStyle: file
+CheckOptions:
+  - key: cppcoreguidelines-explicit-virtual-functions.IgnoreDestructors
+    value: "1"
+  - key: cppcoreguidelines-non-private-member-variables-in-classes.IgnoreClassesWithAllMemberVariablesBeingPublic
+    value: "1"
+  - key: cppcoreguidelines-avoid-do-while.IgnoreMacros
+    value: true
+  - key: modernize-loop-convert.MaxCopySize
+    value: "16"
+  - key: modernize-loop-convert.MinConfidence
+    value: reasonable
+  - key: modernize-loop-convert.NamingStyle
+    value: CamelCase
+  - key: modernize-use-nullptr.NullMacros
+    value: "NULL"
+---
+
